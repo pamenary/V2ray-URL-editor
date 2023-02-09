@@ -16,7 +16,7 @@ watch(URL, (newValue) => {
     const localURL = URL.value.split('://')
     protocol.value = localURL[0]
     if (localURL.length !== 2) return config.value = ''
-    switch (localURL[0]) {
+    switch (protocol.value) {
         case 'vmess':
             config.value = vmessParseToJson(localURL[1])
             break;
