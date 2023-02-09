@@ -5,6 +5,5 @@
 A tool for editing and creating strings of connection for v2ray
 
 
-
-https://user-images.githubusercontent.com/5821738/217804117-37d5a8da-31d0-4d6a-896f-9f055c1b9fc8.mp4
+https://user-images.githubusercontent.com/5821738/217804383-366b09c9-dc92-44d6-a46f-cb28ff2aa7a6.mp4
 
