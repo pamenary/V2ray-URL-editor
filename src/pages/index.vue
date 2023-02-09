@@ -54,13 +54,14 @@ const onClick = () => {
 </script>
 
 <template>
-    <div class="pb-8">
+
+    <div class="w-full pb-8">
         <header>
-            <h1 class="text-5xl font-bold py-7">V2ray URL editor</h1>
+            <h1 class="text-3xl md:text-5xl text-center md:text-left font-bold py-7">V2ray URL editor</h1>
         </header>
 
-        <a-row type="flex" gutter="30">
-            <a-col :span="12">
+        <a-row type="flex" :gutter="{ xs: 0, sm: 25 }">
+            <a-col class="mt-5 md:mt-0" :xs="{ span: 24, order: 2 }" :sm="12">
                 <a-card>
                     <a-form layout="vertical" v-if="config && typeof config === 'object'">
                         <a-form-item :label="key" :name="key" v-for="(value, key) in config" :key="key">
@@ -79,7 +80,7 @@ const onClick = () => {
                     <a-empty v-else />
                 </a-card>
             </a-col>
-            <a-col :span="12">
+            <a-col :xs="{ span: 24, order: 1 }" :sm="12">
                 <a-card>
                     <a-tabs v-model:activeKey="activeTab" class="mb-4">
 
